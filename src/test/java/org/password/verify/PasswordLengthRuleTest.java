@@ -6,19 +6,15 @@ import org.password.verify.exceptions.PasswordLengthException;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class PasswordLengthTest {
+public class PasswordLengthRuleTest {
     @Test
-    public void testLengthGreaterThan8() {
-        try {
-            assertTrue(new PasswordLength().isSatisfiedOn("123456789"));
-        } catch (PasswordLengthException e) {
-            throw new RuntimeException(e);
-        }
+    public void testLengthGreaterThan8() throws PasswordLengthException {
+            assertTrue(new PasswordLengthRule().isSatisfiedOn("123456789"));
     }
 
     @Test(expected = PasswordLengthException.class)
     public void testLengthLessThan8() throws PasswordLengthException {
-            assertFalse(new PasswordLength().isSatisfiedOn("12"));
+            assertFalse(new PasswordLengthRule().isSatisfiedOn("12"));
 
     }
 }

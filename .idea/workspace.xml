@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28b07be1-d500-47f8-aa78-91fac0070d87" name="Changes" comment="Implementing passwordLength Exception">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordNotNull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/exceptions/PasswordNullException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordNotNullTest.java" afterDir="false" />
+    <list default="true" id="28b07be1-d500-47f8-aa78-91fac0070d87" name="Changes" comment="Implementing password Not Null Logic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordUppercaseRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/exceptions/PasswordUppercaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordUppercaseRuleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordLengthRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordNotNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordNotNullRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordLengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordLengthRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordNotNullTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordNotNullRuleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +51,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.password.verify.exceptions" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.password.verify.exceptions" />
+      <recent name="org.password.verify" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordNotNullTest">
-    <configuration name="PasswordLengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PasswordUppercaseRuleTest">
+    <configuration name="PasswordLengthRuleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PasswordVerification" />
       <extension name="coverage">
         <pattern>
@@ -67,13 +73,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.password.verify" />
-      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordLengthTest" />
+      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordLengthRuleTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordLengthTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordLengthRuleTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PasswordVerification" />
       <extension name="coverage">
         <pattern>
@@ -82,14 +88,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.password.verify" />
-      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordLengthTest" />
+      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordLengthRuleTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordNotNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordLengthRuleTest,testLengthGreaterThan8 and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PasswordVerification" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="org.password.verify.PasswordLengthRuleTest,testLengthGreaterThan8" />
+        <pattern testClass="org.password.verify.PasswordLengthRuleTest,testLengthLessThan8" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordNotNullRuleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PasswordVerification" />
       <extension name="coverage">
         <pattern>
@@ -98,7 +115,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.password.verify" />
-      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordNotNullTest" />
+      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordNotNullRuleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordUppercaseRuleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PasswordVerification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.password.verify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.password.verify" />
+      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordUppercaseRuleTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,9 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PasswordNotNullTest" />
-        <item itemvalue="JUnit.PasswordLengthTest" />
-        <item itemvalue="JUnit.PasswordLengthTest.test" />
+        <item itemvalue="JUnit.PasswordUppercaseRuleTest" />
+        <item itemvalue="JUnit.PasswordLengthRuleTest,testLengthGreaterThan8 and 1 more" />
+        <item itemvalue="JUnit.PasswordNotNullRuleTest" />
+        <item itemvalue="JUnit.PasswordLengthRuleTest" />
+        <item itemvalue="JUnit.PasswordLengthRuleTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670481729832</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implementing password Not Null Logic">
+      <created>1670483416053</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670483416053</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,6 +221,7 @@
     <MESSAGE value="Adding password length test" />
     <MESSAGE value="Implementing passwordLength rule" />
     <MESSAGE value="Implementing passwordLength Exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing passwordLength Exception" />
+    <MESSAGE value="Implementing password Not Null Logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing password Not Null Logic" />
   </component>
 </project>

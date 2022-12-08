@@ -2,7 +2,7 @@ package org.password.verify;
 
 import org.password.verify.exceptions.PasswordLengthException;
 
-public class PasswordLength implements Rule{
+public class PasswordLengthRule implements Rule{
     @Override
     public boolean isSatisfiedOn(String s) throws PasswordLengthException {
         return isLengthGreaterThan8(s);

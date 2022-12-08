@@ -2,7 +2,7 @@ package org.password.verify;
 
 import org.password.verify.exceptions.PasswordNullException;
 
-public class PasswordNotNull implements Rule{
+public class PasswordNotNullRule implements Rule{
     @Override
     public boolean isSatisfiedOn(String s) throws PasswordNullException {
         return isPasswordNotNull(s);
