@@ -63,7 +63,7 @@
       <recent name="org.password.verify" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordUppercaseRuleTest">
+  <component name="RunManager" selected="JUnit.PasswordLowercaseRuleTest">
     <configuration name="PasswordLengthRuleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PasswordVerification" />
       <extension name="coverage">
@@ -79,7 +79,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordLengthRuleTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordLengthRuleTest,testLengthGreaterThan8 and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PasswordVerification" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="org.password.verify.PasswordLengthRuleTest,testLengthGreaterThan8" />
+        <pattern testClass="org.password.verify.PasswordLengthRuleTest,testLengthLessThan8" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordLowercaseRuleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PasswordVerification" />
       <extension name="coverage">
         <pattern>
@@ -88,20 +99,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.password.verify" />
-      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordLengthRuleTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordLengthRuleTest,testLengthGreaterThan8 and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PasswordVerification" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="org.password.verify.PasswordLengthRuleTest,testLengthGreaterThan8" />
-        <pattern testClass="org.password.verify.PasswordLengthRuleTest,testLengthLessThan8" />
-      </patterns>
+      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordLowercaseRuleTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordLowercaseRuleTest" />
         <item itemvalue="JUnit.PasswordUppercaseRuleTest" />
         <item itemvalue="JUnit.PasswordLengthRuleTest,testLengthGreaterThan8 and 1 more" />
         <item itemvalue="JUnit.PasswordNotNullRuleTest" />
         <item itemvalue="JUnit.PasswordLengthRuleTest" />
-        <item itemvalue="JUnit.PasswordLengthRuleTest.test" />
       </list>
     </recent_temporary>
   </component>
