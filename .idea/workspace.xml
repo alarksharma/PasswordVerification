@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28b07be1-d500-47f8-aa78-91fac0070d87" name="Changes" comment="Implementing passwordLength rule">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/exceptions/PasswordLengthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/exceptions/PasswordValidationException.java" afterDir="false" />
+    <list default="true" id="28b07be1-d500-47f8-aa78-91fac0070d87" name="Changes" comment="Implementing passwordLength Exception">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordNotNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/exceptions/PasswordNullException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordNotNullTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/Rule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordLengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordLengthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <recent name="org.password.verify.exceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordLengthTest">
+  <component name="RunManager" selected="JUnit.PasswordNotNullTest">
     <configuration name="PasswordLengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PasswordVerification" />
       <extension name="coverage">
@@ -90,8 +89,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PasswordNotNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PasswordVerification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.password.verify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.password.verify" />
+      <option name="MAIN_CLASS_NAME" value="org.password.verify.PasswordNotNullTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordNotNullTest" />
         <item itemvalue="JUnit.PasswordLengthTest" />
         <item itemvalue="JUnit.PasswordLengthTest.test" />
       </list>
@@ -148,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670479662073</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementing passwordLength Exception">
+      <created>1670481729832</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670481729832</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -157,6 +179,7 @@
     <MESSAGE value="Adding password length rule" />
     <MESSAGE value="Adding password length test" />
     <MESSAGE value="Implementing passwordLength rule" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing passwordLength rule" />
+    <MESSAGE value="Implementing passwordLength Exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing passwordLength Exception" />
   </component>
 </project>
