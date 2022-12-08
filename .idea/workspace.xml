@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28b07be1-d500-47f8-aa78-91fac0070d87" name="Changes" comment="Adding password length rule">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/password/verify/PasswordLengthTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="28b07be1-d500-47f8-aa78-91fac0070d87" name="Changes" comment="Adding password length test">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/PasswordLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/password/verify/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/password/verify/Rule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.PasswordLengthTest.test">
+  <component name="RunManager" selected="JUnit.PasswordLengthTest">
     <configuration name="PasswordLengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PasswordVerification" />
       <extension name="coverage">
@@ -85,8 +82,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PasswordLengthTest.test" />
         <item itemvalue="JUnit.PasswordLengthTest" />
+        <item itemvalue="JUnit.PasswordLengthTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -127,13 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670478955587</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding password length test">
+      <created>1670479447784</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670479447784</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating basic maven project" />
     <MESSAGE value="Adding rule Interface" />
     <MESSAGE value="Adding password length rule" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding password length rule" />
+    <MESSAGE value="Adding password length test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding password length test" />
   </component>
 </project>
